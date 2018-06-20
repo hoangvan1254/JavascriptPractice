@@ -9,10 +9,10 @@ form.addEventListener('submit', function(event) {
     } else {
         var x = parseFloat(numField1.value);
         var y = parseFloat(numField2.value);
-        var result = x / y;
-        var percent = result * 100;
+        var result = x /y * 100;
+        
 
-        resultField.innerText = "Answer:" + percent + "%";
+        resultField.innerText = "Answer:" + result + "%";
 
         event.preventDefault();
     }
